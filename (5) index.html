@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube Layout</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background:white;
+}
+
+/* HEADER */
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border:1px solid black;
+    padding:15px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:red;
+}
+
+.search-bar{
+    flex:1;
+    margin:0 30px;
+    text-align:center;
+}
+
+.search-bar input{
+    width:60%;
+    padding:8px;
+}
+
+.icons{
+    font-size:20px;
+}
+
+/* BODY */
+.container{
+    display:flex;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:180px;
+    border:1px solid black;
+    padding:10px;
+    min-height:600px;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar li{
+    margin:15px 0;
+}
+
+/* CONTENT */
+.content{
+    flex:1;
+    border:1px solid black;
+    padding:20px;
+}
+
+/* VIDEOS */
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.video-box{
+    border:1px solid black;
+    padding:10px;
+    text-align:center;
+}
+
+.thumbnail{
+    width:100%;
+    height:120px;
+    border:1px solid black;
+    margin-bottom:10px;
+    line-height:120px;
+}
+
+/* FOOTER */
+.footer{
+    border:1px solid black;
+    text-align:center;
+    padding:15px;
+    margin-top:10px;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="logo">YouTube</div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search Bar">
+    </div>
+
+    <div class="icons">
+        🎤 🔔 👤
+    </div>
+</div>
+
+<!-- BODY -->
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <ul>
+            <li>Home</li>
+            <li>Shorts</li>
+            <li>Subscription</li>
+            <li>Library</li>
+            <li>History</li>
+            <li>Channel List</li>
+        </ul>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <div class="video-grid">
+
+            <!-- Row 1 -->
+            <div class="video-box">
+    <div class="thumbnail">
+        <iframe width="560" height="125" 
+        src="https://www.youtube.com/embed/CqY9lTSsDPk?si=IXFvSNiy9Yl9lPkq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <p>Title</p>
+    <p>Channel Name</p>
+    <p>Views | Upload Date</p>
+</div>
+
+            <div class="video-box">
+                <div class="thumbnail">Video Thumbnail</div>
+                <p>Title</p>
+                <p>Channel Name</p>
+                <p>Views | Upload Date</p>
+            </div>
+
+            <div class="video-box">
+                <div class="thumbnail">Video Thumbnail</div>
+                <p>Title</p>
+                <p>Channel Name</p>
+                <p>Views | Upload Date</p>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="video-box">
+                <div class="thumbnail">Video Thumbnail</div>
+                <p>Title</p>
+                <p>Channel Name</p>
+                <p>Views | Upload Date</p>
+            </div>
+
+            <div class="video-box">
+                <div class="thumbnail">Video Thumbnail</div>
+                <p>Title</p>
+                <p>Channel Name</p>
+                <p>Views | Upload Date</p>
+            </div>
+
+            <div class="video-box">
+                <div class="thumbnail">Video Thumbnail</div>
+                <p>Title</p>
+                <p>Channel Name</p>
+                <p>Views | Upload Date</p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    About | Copyright | Contact | Creator | Advertise | Developer | Privacy | Terms | Settings
+</div>
+
+</body>
+</html>
+</body>
+</html>

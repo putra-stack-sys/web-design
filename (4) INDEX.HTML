@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASUS Layout</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background:#ffffff;
+}
+
+/* HEADER */
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border:1px solid black;
+    padding:15px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.top-icons{
+    font-size:20px;
+}
+
+/* MENU */
+.menu{
+    display:flex;
+    border:1px solid black;
+    padding:10px;
+    gap:30px;
+    justify-content:center;
+}
+
+/* BODY */
+.container{
+    display:flex;
+    min-height:500px;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:180px;
+    border:1px solid black;
+    padding:10px;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar li{
+    margin:15px 0;
+}
+
+/* CONTENT */
+.content{
+    flex:1;
+    padding:20px;
+    border:1px solid black;
+}
+
+/* PRODUCT SECTION */
+.products{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    text-align:center;
+}
+
+.box{
+    border:1px solid black;
+    padding:10px;
+}
+
+.image{
+    width:100%;
+    height:120px;
+    border:1px solid black;
+    margin-bottom:10px;
+}
+
+/* EXTRA */
+.extra{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.extra-box{
+    height:120px;
+    border:1px solid black;
+    text-align:center;
+    line-height:120px;
+}
+
+/* FOOTER */
+.footer{
+    border:1px solid black;
+    text-align:center;
+    padding:15px;
+    margin-top:10px;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="logo">ASUS</div>
+    <div class="top-icons">🔍 🛒 🌐</div>
+</div>
+
+<!-- MENU -->
+<div class="menu">
+    <div>Laptop</div>
+    <div>Desktop</div>
+    <div>Monitors</div>
+    <div>Phones</div>
+    <div>Networking</div>
+    <div>More ▼</div>
+</div>
+
+<!-- BODY -->
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <ul>
+            <li>Deals</li>
+            <li>New Arrivals</li>
+            <li>Product Category</li>
+            <li>Postings</li>
+        </ul>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <div class="products">
+
+            <div class="box">
+                <div class="image">Product Image</div>
+                <p>Title</p>
+                <p>Price</p>
+                <p>Available</p>
+            </div>
+
+            <div class="box">
+                <div class="image">Product Image</div>
+                <p>Title</p>
+                <p>Price</p>
+                <p>Available</p>
+            </div>
+
+            <div class="box">
+                <div class="image">Product Image</div>
+                <p>Title</p>
+                <p>Price</p>
+                <p>Available</p>
+            </div>
+
+        </div>
+
+        <div class="extra">
+            <div class="extra-box">Ads / Stories</div>
+            <div class="extra-box">Reels</div>
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    Products | Supports | About | Copyright | Social Media | Privacy | Terms
+</div>
+
+</body>
+</html>
+</body>
+</html>
