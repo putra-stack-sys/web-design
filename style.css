@@ -5,11 +5,11 @@
             font-family:Arial, sans-serif;
         }
 
-        body{
+        .body{
             background:#f9f9f9;
         }
 
-        header{
+        .header{
             display:flex;
             justify-content:space-between;
             align-items:center;
